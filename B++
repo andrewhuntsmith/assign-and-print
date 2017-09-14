@@ -1,0 +1,7 @@
+./BOY $2
+if [ $? == 1 ]
+then
+	gcc -o "$1" "temp.BOY.c"
+       	chmod 777 "$1"
+	rm "temp.BOY.c"
+fi
